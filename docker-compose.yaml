@@ -1,0 +1,18 @@
+version: '3.1'
+services:
+  app:
+    container_name: rsoi-lab1
+    image: rsoi-lab1
+    build: ./
+    ports:
+      - "8070:8070"
+    depends_on:
+      - db
+  db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=Abdia2000*
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres
