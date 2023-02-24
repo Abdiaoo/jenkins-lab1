@@ -1,4 +1,4 @@
-name: Pipeline
+name: GitHub Classroom Workflow
 on:
   push:
     branches:
@@ -35,6 +35,7 @@ jobs:
         uses: matt-ball/newman-action@master
         with:
           collection: postman/postman_collection.json
+          environment: postman/postman_environment.json
           delayRequest: 150
           reporters: '["cli"]'
       - name: Stop Containers
