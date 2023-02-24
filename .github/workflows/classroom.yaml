@@ -35,6 +35,8 @@ jobs:
         uses: jakejarvis/wait-action@master
         with:
           time: '50s'
+      - name: Run JUnit Tests
+        run: docker compose run --rm app mvn test
       - name: Run API Tests
         uses: matt-ball/newman-action@master
         with:
