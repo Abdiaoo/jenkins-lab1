@@ -26,7 +26,7 @@ jobs:
         with:
           maven-version: 3.6.3
       - name: Build app
-        run: mvn -f pom.xml --batch-mode --batch-mode --update-snapshots clean install -DskipTests=true
+        run: mvn -f pom.xml --batch-mode --batch-mode --update-snapshots clean install -DskipTests
       - name: Build Image
         run: docker compose build
       - name: Run Container
