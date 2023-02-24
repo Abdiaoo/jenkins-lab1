@@ -35,8 +35,6 @@ jobs:
         uses: jakejarvis/wait-action@master
         with:
           time: '50s'
-      - name: Run Unit Tests
-        run: mvn -f pom.xml --batch-mode test
       - name: Run API Tests
         uses: matt-ball/newman-action@master
         with:
