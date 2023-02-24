@@ -31,14 +31,13 @@ jobs:
         run: docker compose build
       - name: Run Container
         run: docker compose up -d
-      - name: see the running containers
-        run: docker ps
-      - name: see logs
-        run: docker logs rsoi-lab1
-      - name: encore
-        run: docker logs db
-      - name: Run Junit Tests
-        run: mvn -f pom.xml --batch-mode test
+      - name: Run API Tests
+        uses: matt-ball/newman-action@master
+        with:
+          collection: postman/collection.json
+          environment: postman/environment.json
+          delayRequest: 150
+          reporters: '["cli"]'
       - name: Stop Containers
         if: always()
         continue-on-error: true
