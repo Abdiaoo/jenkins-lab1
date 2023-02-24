@@ -33,6 +33,10 @@ jobs:
         run: docker compose up -d
       - name: see the running containers
         run: docker ps
+      - name: see logs
+        run: docker logs rsoi-lab1
+      - name: encore
+        run: docker logs db
       - name: Run Junit Tests
         run: mvn -f pom.xml --batch-mode test
       - name: Stop Containers
