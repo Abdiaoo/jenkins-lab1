@@ -48,9 +48,9 @@
 							"raw": "{\n    \"name\": \"{{$randomUserName}}\",\n    \"address\": \"{{$randomStreetAddress}}\",\n    \"work\": \"{{$randomCompanyName}}\",\n    \"age\": 31\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8070/api/v1/persons",
+							"raw": "http://rsoi-lab1:8070/api/v1/persons",
 							"host": [
-								"http://localhost:8070"
+								"http://rsoi-lab1:8070"
 							],
 							"path": [
 								"api",
@@ -88,9 +88,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8070/api/v1/persons/:id",
+							"raw": "http://rsoi-lab1:8070/api/v1/persons/:id",
 							"host": [
-								"http://localhost:8070"
+								"http://rsoi-lab1:8070"
 							],
 							"path": [
 								"api",
@@ -141,9 +141,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8070/api/v1/persons",
+							"raw": "http://rsoi-lab1:8070/api/v1/persons",
 							"host": [
-								"http://localhost:8070"
+								"http://rsoi-lab1:8070"
 							],
 							"path": [
 								"api",
@@ -191,9 +191,9 @@
 							"raw": "{\n    \"name\": \"{{$randomUserName}}\",\n    \"address\": \"{{$randomStreetAddress}}\"\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8070/api/v1/persons/:id",
+							"raw": "http://rsoi-lab1:8070/api/v1/persons/:id",
 							"host": [
-								"http://localhost:8070"
+								"http://rsoi-lab1:8070"
 							],
 							"path": [
 								"api",
@@ -231,9 +231,9 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8070/api/v1/persons/:id",
+							"raw": "http://rsoi-lab1:8070/api/v1/persons/:id",
 							"host": [
-								"http://localhost:8070"
+								"http://rsoi-lab1:8070"
 							],
 							"path": [
 								"api",
