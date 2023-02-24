@@ -31,6 +31,9 @@ jobs:
         run: docker compose build
       - name: Run Container
         run: docker compose up -d
+      - name: wait 40s
+        run: slepp 40s
+        shell: bash
       - name: Run API Tests
         uses: matt-ball/newman-action@master
         with:
